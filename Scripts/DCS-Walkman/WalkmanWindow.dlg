@@ -1,0 +1,305 @@
+local buttonHeight = 25 -- 20
+local buttonWidth = 35 -- 40, 55
+
+local margin = 0
+
+local columnSpacing = buttonWidth + 5
+local column1 = margin
+local column2 = columnSpacing + column1
+local column3 = columnSpacing + column2
+local column4 = columnSpacing + column3
+local column5 = columnSpacing + column4
+
+local rowSpacing = buttonHeight * 0.8 + 0
+local row1 = margin
+local row2 = rowSpacing + row1
+local row3 = rowSpacing + row2
+
+dialog = {
+    ["type"] = "Window",
+    ["params"] = {
+        ["bounds"] = {
+            [1] = {
+                ["h"] = 200,
+                ["w"] = 350,
+                ["x"] = 0,
+                ["y"] = 0
+            }
+        },
+        ["draggable"] = true,
+        ["enabled"] = true,
+        ["hasCursor"] = true,
+        ["lockFlow"] = false,
+        ["modal"] = false,
+        ["offscreen"] = false,
+        ["resizable"] = true,
+        ["zOrder"] = 112,
+        ["text"] = "DCS-Walkman"
+    },
+    ["skin"] = {
+        ["params"] = {
+            ["name"] = "windowSkin"
+        },
+        ["skins"] = {
+            ["header"] = {
+                ["skinData"] = {
+                    ["params"] = {
+                        ["hasCloseButton"] = false,
+                        ["insets"] = {
+                            ["bottom"] = 2,
+                            ["left"] = 2,
+                            ["right"] = 2,
+                            ["top"] = 2
+                        }
+                    },
+                    ["states"] = {
+                        ["released"] = {
+                            [1] = {
+                                ["bkg"] = {
+                                    ["center_center"] = "0x00000066"
+                                },
+                                ["text"] = {
+                                    ["color"] = "0xffffffaa"
+                                }
+                            },
+                            [2] = {
+                                ["bkg"] = {
+                                    ["center_center"] = "0x00000066"
+                                },
+                                ["text"] = {
+                                    ["color"] = "0xffffffaa"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        ["states"] = {
+            ["released"] = {
+                [1] = {
+                    ["bkg"] = {
+                        ["center_center"] = "0x00000000"
+                    }
+                }
+            }
+        }
+    },
+    ["children"] = {
+        ["Box"] = {
+            ["children"] = {
+			-----------------
+			-- DCS Walkman --
+			-----------------
+			-- Symbols
+			-- ‹›˂˃<>▲►◄▼←→●○
+				["VolSlider"] = {
+						["params"] = {
+							["bounds"] = {
+								["h"] = 24, -- 24
+								["w"] = column5 + buttonWidth, -- 130
+								["x"] = column1,
+								["y"] = row2,
+							},
+							["enabled"] = true,
+							["pageStep"] = 10, -- the distance it goes when you click the bar instead of the knob
+							["range"] = {
+								["max"] = 100,
+								["min"] = 0,
+							},
+							["step"] = 1, -- the possible selectable number step when you drag the slider
+							["tabOrder"] = 0,
+							["text"] = "",
+							["tooltip"] = "Volume",
+							["value"] = 80,
+							["visible"] = true,
+							["zindex"] = 0,
+						},
+						["skin"] = {
+							["params"] = {
+								["name"] = "horzSliderSkin_options",
+							},
+						},
+						["type"] = "HorzSlider",
+					},
+				["WalkmanPrevButton"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = buttonHeight,
+                            ["w"] = buttonWidth,
+                            ["x"] = column2,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["tabOrder"] = 0,
+                        ["text"] = "◄◄",
+                        ["tooltip"] = "Previous Song",
+                        ["visible"] = true,
+                        ["zindex"] = 1
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "buttonSkinAwacs"
+                        }
+                    },
+                    ["type"] = "Button"
+                },
+				["WalkmanStopButton"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = buttonHeight,
+                            ["w"] = buttonWidth,
+                            ["x"] = column5,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["tabOrder"] = 0,
+                        ["text"] = "■",
+                        ["tooltip"] = "Stop",
+                        ["visible"] = true,
+                        ["zindex"] = 1
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "buttonSkinAwacs"
+                        }
+                    },
+                    ["type"] = "Button"
+                },
+				["WalkmanPlayButton"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = buttonHeight,
+                            ["w"] = buttonWidth,
+                            ["x"] = column3,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["tabOrder"] = 0,
+                        ["text"] = "►",
+                        ["tooltip"] = "Play",
+                        ["visible"] = true,
+                        ["zindex"] = 1
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "buttonSkinAwacs"
+                        }
+                    },
+                    ["type"] = "Button"
+                },
+				["WalkmanNextButton"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = buttonHeight,
+                            ["w"] = buttonWidth,
+                            ["x"] = column4,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["tabOrder"] = 0,
+                        ["text"] = "►►",
+                        ["tooltip"] = "Next Song",
+                        ["visible"] = true,
+                        ["zindex"] = 1
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "buttonSkinAwacs"
+                        }
+                    },
+                    ["type"] = "Button"
+                },
+				["WalkmanFolderButton"] = {
+                    ["params"] = {
+                        ["bounds"] = {
+                            ["h"] = buttonHeight,
+                            ["w"] = buttonWidth,
+                            ["x"] = column1,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["tabOrder"] = 0,
+                        ["text"] = "♫", -- ♪♫
+                        ["tooltip"] = "Folder",
+                        ["visible"] = true,
+                        ["zindex"] = 1
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "buttonSkinAwacs"
+                        }
+                    },
+                    ["type"] = "Button"
+                },
+				--[[
+				["WalkmanEditBox"] = {
+                    ["params"] = {
+                        ["acceptDecimalPoint"] = false,
+                        ["bounds"] = {
+                            ["h"] = 16,
+                            ["w"] = column5 + buttonWidth,
+                            ["x"] = column1,
+                            ["y"] = row1
+                        },
+                        ["enabled"] = true,
+                        ["multiline"] = false,
+                        ["numeric"] = false,
+                        ["password"] = false,
+                        ["readOnly"] = false, -- make true
+                        ["tabOrder"] = 80,
+                        ["text"] = "123456789012345678901234567890",
+                        ["textWrapping"] = true,
+                        ["tooltip"] = "Current Song",
+                        ["visible"] = true,
+                        ["zindex"] = 0
+                    },
+                    ["skin"] = {
+                        ["params"] = {
+                            ["name"] = "editBoxNew"
+                        },
+                        ["states"] = {
+                            ["released"] = {
+                                [1] = {
+                                    ["bkg"] = {
+                                        ["center_center"] = "0x00000080"
+                                    },
+                                    ["text"] = {
+                                        ["font"] = "CONSOLA.TTF",
+                                        ["lineHeight"] = 12
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    ["type"] = "EditBox"
+                },
+				--]]
+			---------------------
+			-- DCS Walkman End --
+			---------------------
+            },
+            ["params"] = {
+                ["bounds"] = {
+                    [1] = {
+                        ["h"] = 200,
+                        ["w"] = 350,
+                        ["x"] = 0,
+                        ["y"] = 0
+                    }
+                },
+                ["enabled"] = true,
+                ["text"] = "",
+                ["tooltip"] = "",
+                ["visible"] = true,
+                ["zindex"] = 0
+            },
+            ["skin"] = {
+                ["params"] = {
+                    ["name"] = "panelSkin"
+                }
+            },
+            ["type"] = "Panel"
+        }
+    }
+}
