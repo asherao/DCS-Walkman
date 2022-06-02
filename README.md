@@ -34,6 +34,7 @@
 - Determine if DCS-Walkman starts shown or hidden by changing the *hideOnLaunch* value on the config file to `true` or `false`
 - You can add and remove songs whenever you like, no DCS restart necessary
 - You can have multiple folders in your `C:\Users\Bailey\Saved Games\DCS.openbeta\Config\DCS-Walkman` folder. DCS-Walkman will only play the songs **not** in folders. Think of it as changing the CD in your walkman!
+- You can change the folder that DCS-Walkman uses for the songs by changing `local playList = playListFromDir(lfs.writedir() .. "Config\\DCS-Walkman")` to `local playList = playListFromDir([[C:\Users\Profile\Music\Party Playlist]])` in `Saved Games\DCS.openbeta\Scripts\Hooks\walkman-hook.lua`, for example
 - You can change the default hotkeys by editing the Config file located in `Saved Games/DCS/Config/DCS-Walkman/DCS-WalkmanConfig.lua`. You can also use a 3rd party program like Voice Attack to bind these keys to your HOTAS, controller, buttonbox, VR controller, whatever you like!
   - Stop (Ctrl+Shift+1)
   - Previous Song (Ctrl+Shift+2)
