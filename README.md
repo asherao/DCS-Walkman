@@ -43,3 +43,4 @@
   - Volume Down (Ctrl+Shift+6)
   - Volume up (Ctrl+Shift+7)
   - Hide/Show (Ctrl+Shift+8)
+- If you can't find the App on the screen, you may have dragged it off the screen. To get it back change `windowPosition.x` and `windowPosition.y` in `DCS-WalkmanConfig.lua` or delete the file to generate a new one.
