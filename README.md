@@ -30,7 +30,6 @@
 - Thank you for reading the readme
 
 ## Tips and Tricks
-- You can change the order of the buttons by swaping the pre-colon titles of each line (example pic)
 - Determine if DCS-Walkman starts shown or hidden by changing the *hideOnLaunch* value on the config file to `true` or `false`
 - You can add and remove songs whenever you like, no DCS restart necessary
 - You can have multiple folders in your `C:\Users\Bailey\Saved Games\DCS\Config\DCS-Walkman` folder. DCS-Walkman will only play the songs **not** in folders. Think of it as changing the CD in your walkman!
