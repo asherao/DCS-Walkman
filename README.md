@@ -10,6 +10,7 @@
 - "Now Playing" titlebar
 - OGG or WAV files
   - Use FlicFlac to easily convert from mp3 (https://github.com/DannyBen/FlicFlac)
+- Not effected by ingame time acceleration
 
 ## Download and install
 1. Download DCS-Walkman, which can be found at the ED User Files *(currently pending approval)*
