@@ -1,6 +1,10 @@
 # DCS-Walkman
-(picture)
-*Listen to your favorite tunes while in DCS, in all planes, whenever you want, even in the Mission Editor.*
+
+<img src="https://github.com/asherao/DCS-Walkman/blob/main/GithubImages/pic02.jpg">  
+
+*Listen to your favorite tunes while in DCS, in all planes, whenever you want, even in the Mission Editor.*  
+
+
 ## Features
 - Works across Single Player, Multiplayer, Mission Editor, Main Menu, and Loading Screens
 - VR and Flatscreen Friendly
@@ -18,9 +22,6 @@
 3. Click and Drag the unzipped `Scripts` folder into your `C:/Users/Profile/Saved Games/DCS` folder
 4. (After reading the rest of this readme) You are now ready to use DCS-Walkman!
 5. Use FlicFlac to easily convert from mp3 (https://github.com/DannyBen/FlicFlac)
-## How To
-(pic of draw-out)
-*DCS-Walkman will **not** automatically play tracks back-to-back*
 
 ## Acknowledgements
 - Based on the framework created by rkusa's DCS-Scratchpad (https://github.com/rkusa/dcs-scratchpad/blob/main/Scripts/Hooks/scratchpad-hook.lua)
@@ -45,3 +46,4 @@
   - Volume up (Ctrl+Shift+7)
   - Hide/Show (Ctrl+Shift+8)
 - If you can't find the App on the screen, you may have dragged it off the screen. To get it back change `windowPosition.x` and `windowPosition.y` in `DCS-WalkmanConfig.lua` or delete the file to generate a new one.
+- *DCS-Walkman will **not** automatically play tracks back-to-back*
