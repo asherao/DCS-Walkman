@@ -32,6 +32,7 @@
 - If you are feeling charitable, please feel free to donate. All donations go to supporting the creation of even more free apps and mods for DCS, just like this one! https://www.paypal.com/paypalme/asherao
 - Join Bailey's VoiceAttack Discord Here https://discord.gg/PbYgC5e
 - See more of my mods here https://www.digitalcombatsimulator.com/en/files/filter/user-is-baileywa/apply/?PER_PAGE=100
+- Logo front from https://famfonts.com/walkman/
 - Thank you for reading the readme
 
 ## Tips and Tricks
