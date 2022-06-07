@@ -16,7 +16,7 @@
   - Use FlicFlac to easily convert from mp3 (https://github.com/DannyBen/FlicFlac)
 - Not effected by ingame time acceleration
 - DCS update safe
-- 
+
 ## Download and install
 1. Download DCS-Walkman, which can be found at the ED User Files *(currently pending approval)*
 2. Once downloaded, extract the files via your preferred zip software
@@ -26,7 +26,7 @@
 
 ## Acknowledgements
 - Based on the framework created by rkusa's DCS-Scratchpad (https://github.com/rkusa/dcs-scratchpad/blob/main/Scripts/Hooks/scratchpad-hook.lua)
-- Readme music from IC3PEAK (link)
+- Readme music from IC3PEAK ([link](https://ic3peak.bandcamp.com/album/kiss-of-death))
 - If you are feeling charitable, please feel free to donate. All donations go to supporting the creation of even more free apps and mods for DCS, just like this one! https://www.paypal.com/paypalme/asherao
 - Join Bailey's VoiceAttack Discord Here https://discord.gg/PbYgC5e
 - See more of my mods here https://www.digitalcombatsimulator.com/en/files/filter/user-is-baileywa/apply/?PER_PAGE=100
