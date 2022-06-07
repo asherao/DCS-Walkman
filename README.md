@@ -15,7 +15,8 @@
 - OGG or WAV files
   - Use FlicFlac to easily convert from mp3 (https://github.com/DannyBen/FlicFlac)
 - Not effected by ingame time acceleration
-
+- DCS update safe
+- 
 ## Download and install
 1. Download DCS-Walkman, which can be found at the ED User Files *(currently pending approval)*
 2. Once downloaded, extract the files via your preferred zip software
