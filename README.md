@@ -47,3 +47,4 @@
   - Hide/Show (Ctrl+Shift+8)
 - If you can't find the App on the screen, you may have dragged it off the screen. To get it back change `windowPosition.x` and `windowPosition.y` in `DCS-WalkmanConfig.lua` or delete the file to generate a new one.
 - *DCS-Walkman will **not** automatically play tracks back-to-back*
+- The GUI is limited to DCSism. If you need assistance while using it in VR you can pause the game to position the cursor.
