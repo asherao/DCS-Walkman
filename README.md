@@ -18,7 +18,7 @@
 - DCS update safe
 
 ## Download and install
-1. Download DCS-Walkman, which can be found at the ED User Files *(currently pending approval)*
+1. Download DCS-Walkman, which can be found at the ED User Files (https://www.digitalcombatsimulator.com/en/files/3322875/)
 2. Once downloaded, extract the files via your preferred zip software
 3. Click and Drag the unzipped `Scripts` folder into your `C:/Users/Profile/Saved Games/DCS` folder
 4. (After reading the rest of this readme) You are now ready to use DCS-Walkman!
